@@ -922,6 +922,8 @@ ul.slick-dots li.slick-active button {
   left: 2rem;
   top: 50%;
   transform: translateY(-50%);
+  width: 2.5rem;
+  object-fit: scale-down;
 }
 .black-full-btn::after{
     content: '';
@@ -938,6 +940,7 @@ ul.slick-dots li.slick-active button {
   position: relative;
   font-size: 0;
   margin-right: 1.4rem;
+  max-width: 17.5rem;
 }
 .project-item .text {
   position: absolute;
