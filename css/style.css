@@ -1105,7 +1105,7 @@ ul.about-usp-list li h5 {
   font-weight: 400;
 }
 .full-video-slider-section  ul.slick-dots {
-  bottom: 24rem;
+  bottom: 33vh;
 }
 @media (max-width: 400px) {
   .project-item{max-width: 16.5rem;}
