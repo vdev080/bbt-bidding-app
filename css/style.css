@@ -1110,3 +1110,6 @@ ul.about-usp-list li h5 {
 @media (max-width: 400px) {
   .project-item{max-width: 16.5rem;}
 }
+@media (max-height: 600px) {
+  .full-video-slider-section ul.slick-dots{bottom: 38vh;}
+}
