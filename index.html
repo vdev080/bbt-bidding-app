@@ -19,7 +19,7 @@
     </div>
     <div class="video-item">
         <video autoplay="true" muted="true" playsinline="" preload="" poster="img/BBT-Welcome.jpg">
-            <source src="img/video.mp4" type="video/mp4">
+            <source src="img/video-2.mp4" type="video/mp4">
         </video>
     </div>
     <div class="video-item">
@@ -44,15 +44,48 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
-    $('.full-video-slider-section').slick({
+$(document).ready(function () {
+
+  const $slider = $('.full-video-slider-section');
+
+  $slider.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 18000,
     arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    autoplay: false,
+  });
+
+
+  function playCurrentVideo(index) {
+    const $currentSlide = $slider.find('.slick-slide[data-slick-index="' + index + '"]');
+    const video = $currentSlide.find('video').get(0);
+
+    $slider.find('video').each(function () {
+      this.pause();
+      this.currentTime = 0;
+    });
+
+    if (video) {
+      video.play();
+
+
+      video.onended = function () {
+        $slider.slick('slickNext');
+      };
+    }
+  }
+
+
+  playCurrentVideo(0);
+
+
+  $slider.on('afterChange', function (event, slick, currentSlide) {
+    playCurrentVideo(currentSlide);
+  });
+
 });
 </script>
