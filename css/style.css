@@ -741,10 +741,12 @@ header{
 .Explore-list  .explore-item a{
     display: block;
 }
-.Explore-list .explore-item .img-box img {
+.Explore-list .explore-item .img-box video,.Explore-list .explore-item .img-box img {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
+  max-height: 28rem;
+  object-fit: cover;
 }
 .Explore-list .explore-item .img-box {
   position: relative;
@@ -1012,7 +1014,13 @@ ul.slick-dots li.slick-active button {
   height: 100%;
   border-radius: 1.2rem;
 }
-
+.transform-grid-box .img-box video {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  max-height: 25rem;
+  object-fit: cover;
+}
 ul.about-usp-list li h5 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
