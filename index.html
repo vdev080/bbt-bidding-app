@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBT Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="full-video-slider-section">
+    <div class="video-item">
+        <video autoplay="true" muted="true" playsinline="" preload="" poster="img/BBT-Welcome.jpg">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-item">
+        <video autoplay="true" muted="true" playsinline="" preload="" poster="img/BBT-Welcome.jpg">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-item">
+        <video autoplay="true" muted="true" playsinline="" preload="" poster="img/BBT-Welcome.jpg">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+<div class="login-bar">
+    <div class="container">
+        <div class="login-btn">
+            <a href="javascript:void(0);" class="btn">Login/Signup</a>
+        </div>
+        <a href="/welcome.html" class="continue-btn mt-2">Continue as Guest</a>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $('.full-video-slider-section').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 18000,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    cssEase: 'linear'
+});
+</script>

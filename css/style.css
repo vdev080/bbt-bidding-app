@@ -838,6 +838,7 @@ ul.bidding-usp-list li .text-box h6 {
 .recent-Auctions-item {
   position: relative;
   font-size: 0;
+  margin: 0 .1rem;
 }
 .recent-Auctions-item .detail-box {
   position: absolute;
@@ -1052,7 +1053,7 @@ ul.about-usp-list li h5 {
 .form-box form textarea {
   height: 11rem;
 }
-.form-box form .submit-btn {
+.form-box form .submit-btn,.btn {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -1061,4 +1062,40 @@ ul.about-usp-list li h5 {
   border: 0;
   color: #090909;
   margin-top: 1rem;
+  display: block;
+  background-color: #fff;
+}
+.full-video-slider-section  video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-bar {
+  padding: 2.8rem 0 3.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #000;
+  border-top-left-radius: 3.2rem;
+  border-top-right-radius: 3.2rem;
+}
+.login-bar .btn {
+  background-color: #BEBEBE;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.login-bar .continue-btn {
+  text-align: center;
+  display: block;
+  font-size: 1.8rem;
+  color: #A4A4A4;
+  font-weight: 400;
+}
+.full-video-slider-section  ul.slick-dots {
+  bottom: 24rem;
 }
