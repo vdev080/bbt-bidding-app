@@ -1128,4 +1128,5 @@ ul.about-usp-list li h5 {
 }
 @media (max-height: 700px) {
   .full-video-slider-section ul.slick-dots{bottom: 42vh;}
+  .full-video-slider-section .heading-box{  top: 43%;}
 }
