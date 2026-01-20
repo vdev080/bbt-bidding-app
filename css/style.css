@@ -751,16 +751,7 @@ header{
 .Explore-list .explore-item .img-box {
   position: relative;
 }
-.Explore-list .explore-item .img-box::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.84%, rgba(0, 0, 0, 0.6) 103%);
-  border-radius: 2rem;
-  top: 0;
-  left: 0;
-}
+
 .Explore-list .explore-item .detail-box {
   position: absolute;
   bottom: 2.5rem;
@@ -861,16 +852,7 @@ ul.bidding-usp-list li .text-box h6 {
   width: 100%;
   height: 100%;
 }
-.recent-Auctions-item .img-box::after {
-  content: '';
-  position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.84%, rgba(0, 0, 0, 0.6) 103%);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 2rem;
-}
+
 .recent-Auctions-item .notice-box {
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
@@ -955,17 +937,7 @@ ul.slick-dots li.slick-active button {
 .project-item .img-box {
   position: relative;
 }
-.project-item .img-box::after {
-  content: '';
-  position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.84%, rgba(0, 0, 0, 0.6) 103%);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  border-radius: 1.2rem;
-}
+
 .project-item .img-box img {
   width: 100%;
   height: 100%;
@@ -1032,16 +1004,7 @@ ul.about-usp-list li h5 {
   transform: translateX(-50%);
   width: 85%;
 }
-.transform-grid-box .img-box::after {
-  content: '';
-  position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.84%, rgba(0, 0, 0, 0.6) 103%);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 1.2rem;
-}
+
 .form-box form {
   margin-top: 2.3rem;
   font-size: 0;
@@ -1135,6 +1098,10 @@ ul.about-usp-list li h5 {
   top: 0;
   left: 0;
   border-radius: 1.2rem;
+}
+
+.recent-Auctions-item .img-box.gradient::after {
+  border-radius: 2rem;
 }
 @media (max-width: 400px) {
   .project-item{max-width: 16.5rem;}
